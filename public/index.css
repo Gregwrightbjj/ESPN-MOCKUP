@@ -1,0 +1,188 @@
+body {
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+  background: #f2f2f2 url(http://a2.espncdn.com/prod/assets/clubhouses/2010/ncaa/gradients/150.jpg) 50% 0 repeat-x;
+}
+li a{
+ text-decoration: none;
+ color: #888
+}
+li a:hover{
+    color: #225db7;
+    text-decoration:underline;
+}
+.analysis{
+  border-left:solid grey 1px;
+  padding-left: 2px;
+}
+.big-container0{
+  font-size: 0px;
+}
+.big-container1{
+  font-size: 0px;
+  display: none;
+}
+.big-container2{
+  font-size: 0px;
+  display: none;
+}
+.big-container3{
+  font-size: 0px;
+  display: none;
+}
+.big-container4{
+  font-size: 0px;
+  display: none;
+}
+
+.big-image {
+  width: 100%;
+}
+
+.big-footer {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  padding: 15px;
+}
+
+.big-footer-credit {
+  position: absolute;
+  top: 5px;
+  right: 11px;
+  color: #ababab;
+  font-size: 9px;
+}
+.big-footer-links-container {
+  display: inline-block;
+  padding-right: 5px;
+}
+.big-footer-links{
+ color: #669dd6;
+ font-weight:bold;
+ text-decoration: none;
+ padding-right: 2px;
+}
+.big-footer-links:hover{
+  text-decoration: underline;
+}
+.big-footer-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.big-footer-text {
+  display: inline-block;
+}
+
+
+
+.carousel {
+  display: inline-block;
+  width: 64%;
+  font-size: 14px;
+}
+
+.carousel-subheaders {
+  display: inline-block;
+    width: 19%;
+    padding-left: 1.2%;
+    padding-top: 9px;
+}
+
+.carousel-subheaders:first-child {
+  padding-left: 0px;
+}
+
+.carousel-subheaders-container {
+  width: 100%;
+}
+
+.carousel-subheaders-wrap:first-child {
+  padding-left: 0px;
+}
+
+.container {
+  width: 68%;
+  margin: auto;
+  background-color: white;
+  margin-top: 26px;
+}
+
+.headlines{
+  display: inline-block;
+  width: 35%;
+  font-size: 14px;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.subheader {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.subheader:hover{
+  cursor:pointer;
+}
+.subheader:hover .subheader-subtitle{
+  display: block;
+  cursor: pointer;
+}
+
+.subheader-img {
+  width: 100%;
+}
+
+.subheader-title {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  background-color: black;
+  font-family: verdana,arial,sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.subheader-subtitle {
+  display: block;
+  bottom: 0px;
+  background-color: black;
+  width: 100%;
+  color: #aaa;
+  display: none
+}
+
+
+.topics {
+    background-image: linear-gradient(to bottom,#dbdbdb 0,#fff 100%);
+}
+
+.topic-item {
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    bottom: 12px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-left: 1px solid #ccc;
+} 
+
+.topic-item:nth-child(2){
+  border-left: none;
+}
+

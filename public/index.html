@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="espnApp">
+  <head>
+    <title>ESPN</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="libs/jquery.js"></script>
+    <script src="libs/underscore.js"></script>
+    <script src="libs/angular.js"></script>
+    <script src="index.js"></script>
+
+  </head>
+  <body>
+	<div class="container">
+<!-- Topics -->
+      <div class="topics" ng-controller="TopicsController">
+        <img src="http://a2.espncdn.com/i/sctrends/logo-sc-trends2.png"/>
+        <div ng-repeat="item in data" class="topic-item">
+        {{item.text}}
+        </div>
+      </div>
+<!-- Carousel -->
+        <div class="carousel" ng-controller="CarouselController">
+	        <div class="big-container0" >
+	          <img class="big-image" ng-src="{{data[0].big.background}}"/>
+	          <div class="big-footer">
+		            <div class="big-footer-title">{{data[0].big.title}}</div>
+		            <div class="big-footer-text">{{data[0].big.text}}</div>
+		            <div class="big-footer-links-container" ng-repeat="link in data[0].big.links">
+		              <a class= "big-footer-links"href="{{link.url}}">{{link.text}}</a><img ng-src="{{link.glyph}}"/>
+		            </div>
+					<div class="big-footer-credit">{{data[0].big.credit}}</div>
+			  </div>
+	        </div>
+
+	        <div class="big-container1" >
+	          <iframe ng-src="{{data[1].big.iframe}}" type="text/html"  seamless width="100%" height="350"></iframe>
+	          <div class="big-footer">
+		            <div class="big-footer-title">{{data[1].big.title}}</div>
+		            <div class="big-footer-text">{{data[1].big.text}}</div>
+		            <div class="big-footer-links-container" ng-repeat="link in data[1].big.links">
+		              <a class= "big-footer-links"href="{{link.url}}">{{link.text}}</a><img ng-src="{{link.glyph}}"/>
+		            </div>
+					<div class="big-footer-credit">{{data[1].big.credit}}</div>
+			  </div>
+	        </div>
+
+	        <div class="big-container2" >
+	          <img class="big-image" ng-src="{{data[2].big.background}}"/>
+	          <div class="big-footer">
+		            <div class="big-footer-title">{{data[2].big.title}}</div>
+		            <div class="big-footer-text">{{data[2].big.text}}</div>
+		            <div class="big-footer-links-container" ng-repeat="link in data[2].big.links">
+		              <a class= "big-footer-links"href="{{link.url}}">{{link.text}}</a><img ng-src="{{link.glyph}}"/>
+		            </div>
+					<div class="big-footer-credit">{{data[2].big.credit}}</div>
+			  </div>
+	        </div>
+
+	        <div class="big-container3" >
+	          <img class="big-image" ng-src="{{data[3].big.background}}"/>
+	          <div class="big-footer">
+		            <div class="big-footer-title">{{data[3].big.title}}</div>
+		            <div class="big-footer-text">{{data[3].big.text}}</div>
+		            <div class="big-footer-links-container" ng-repeat="link in data[3].big.links">
+		              <a class= "big-footer-links"href="{{link.url}}">{{link.text}}</a><img ng-src="{{link.glyph}}"/>
+		            </div>
+					<div class="big-footer-credit">{{data[3].big.credit}}</div>
+			  </div>
+	        </div>
+
+	        <div class="big-container4" >
+	          <img class="big-image" ng-src="{{data[4].big.background}}"/>
+	          <div class="big-footer">
+		            <div class="big-footer-title">{{data[4].big.title}}</div>
+		            <div class="big-footer-text">{{data[4].big.text}}</div>
+		            <div class="big-footer-links-container" ng-repeat="link in data[4].big.links">
+		              <a class= "big-footer-links"href="{{link.url}}">{{link.text}}</a><img ng-src="{{link.glyph}}"/>
+		            </div>
+					<div class="big-footer-credit">{{data[4].big.credit}}</div>
+			  </div>
+	        </div>
+
+<!-- Subheaders section -->
+	        <div class="carousel-subheaders-container">
+	          <div class="carousel-subheaders" ng-repeat="item in data" ng-attr-id="{{ this.$index}}">
+	            <div class="subheader" ng-click="doStuff()">
+	              <img class="subheader-img" ng-src="{{item.small.background}}"/>
+	              <div class="subheader-title">{{item.small.title}}<div class="subheader-subtitle">{{item.small.subtitle}}</div></div>
+	            </div>
+	          </div>
+	        </div>
+	    </div>
+<!-- Headlines -->
+	      <div class="headlines" ng-controller="HeadlinesController">
+		        <ul ng-repeat="item in data">
+		          <li><a href="{{item.url}}">{{item.text}}</a><img ng-src="{{item.glyph}}"/>
+		            <a ng-hide="{{!item.analysis}}"class="analysis" href="{{item.analysis.url}}">{{item.analysis.text}}</a>
+		          </li>
+		        </ul>
+	      </div>
+	</div>
+    
+  </body>
+</html>
