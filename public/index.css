@@ -1,3 +1,4 @@
+
 body {
   font-size: 0px;
   margin: 0px;
@@ -107,7 +108,7 @@ li a:hover{
 }
 
 .container {
-  width: 68%;
+  width: 960px;
   margin: auto;
   background-color: white;
   margin-top: 26px;
@@ -181,8 +182,14 @@ li a:hover{
     padding-right: 27px;
     border-left: 1px solid #ccc;
 } 
+.topic-item:hover{
+  color:red;
+  cursor: pointer;
+}
 
 .topic-item:nth-child(2){
   border-left: none;
 }
 
+ @media (max-width: 1200px){ 
+ }
