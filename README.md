@@ -1,5 +1,7 @@
 ## Angular  ESPN-MOCKUP
 
+http://gregwrightbjj.github.io/ESPN-MOCKUP/public/
+
 ### Description
 
 Let's bring together our use of Angular so far and make something cool. During week 1, John asked when we'd be creating something slick like ESPN's landing page; well.. here we are.
